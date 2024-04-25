@@ -8,15 +8,15 @@ croPic.crop((100, 75, 300, 150)).show()
 croPic.save("croPIC.jpg")
 
 picMass = {1:"passHa.jpg", 2:"novGod.jpg"}
-choicePic = input("1 = Пасха, 2 = Новый год")
+choicePic = input("1 = РџР°СЃС…Р°, 2 = РќРѕРІС‹Р№ РіРѕРґ")
 choicePic = int(choicePic)
 secPic = Image.open(picMass[choicePic])
 secPic.show()
 
-accepter = input("Кого хотите поздравить ? ")
-accepter = accepter + ", поздравляю!"
+accepter = input("РљРѕРіРѕ С…РѕС‚РёС‚Рµ РїРѕР·РґСЂР°РІРёС‚СЊ ? ")
+accepter = accepter + ", РїРѕР·РґСЂР°РІР»СЏСЋ!"
 whereToWrite = {"1":(400, 100), "2":(400,700), "3":(400, 1000)}
-placeToWrite = input("Где хотите расположить надпись ? 1 - Сверху, 2 - По середине, 3 - Снизу/n")
+placeToWrite = input("Р“РґРµ С…РѕС‚РёС‚Рµ СЂР°СЃРїРѕР»РѕР¶РёС‚СЊ РЅР°РґРїРёСЃСЊ ? 1 - РЎРІРµСЂС…Сѓ, 2 - РџРѕ СЃРµСЂРµРґРёРЅРµ, 3 - РЎРЅРёР·Сѓ/n")
 thirPic = Image.open("JAVA.jpg")
 pozdravil = ImageDraw.Draw(thirPic)
 writePlace = whereToWrite[placeToWrite]
